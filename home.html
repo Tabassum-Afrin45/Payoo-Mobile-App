@@ -15,63 +15,94 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-[#F4F5F7] h-[100vh]">
-     <div class="max-w-lg mx-auto bg-white pb-6 rounded-b-2xl">
+<body class="bg-[#F4F5F7] min-h-[100vh] pb-20">
+    <div class="max-w-lg mx-auto bg-white pb-6 rounded-b-2xl">
         <!-- Navbar section -->
-          <div class="min-h-[100px] flex justify-between items-center border-b-2 border-gray-300 px-5">
-        <div class="flex justify-between items-center">
-            <img src="./assets/Group.png" class="h-[50px] pr-1" alt="">
-            <div>
-                <h2 class="font-bold text-xl mb-2">$<span>45000</span></h2>
-                <h3 class="text-[#08080880] font-medium">Available Balance</h3>
+        <div class="min-h-[100px] flex justify-between items-center border-b-2 border-gray-300 px-5">
+            <div class="flex justify-between items-center">
+                <img src="./assets/Group.png" class="h-[50px] pr-1" alt="">
+                <div>
+                    <h2 class="font-bold text-xl mb-2">$<span>45000</span></h2>
+                    <h3 class="text-[#08080880] font-medium">Available Balance</h3>
+                </div>
+            </div>
+            <button class="btn btn-outline border-2 border-gray-300 text-[#08080880]"><i
+                    class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-600"></i>Log Out</button>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="py-11 px-5">
+            <h2 class="font-bold text-3xl">🔥Welcome to Payooo!</h2>
+            <p class="text-lg text-[#08080880] pt-4">Enjoy easy and convenient financial services with us. Cashout
+                charge is
+                low and </p>
+        </div>
+
+        <!-- Card Section -->
+        <div class="min-h-[200px] grid grid-cols-3 grid-rows-2 gap-5 px-5">
+
+            <div class="border-2 border-gray-300 rounded-lg p-6">
+                <img src="./assets/wallet1.png" class="mx-auto" alt="">
+                <h3 class="font-medium text-center">Add Money</h3>
+            </div>
+
+            <div class="border-2 border-gray-300 rounded-lg p-6">
+                <img src="./assets/send1.png" class="mx-auto" alt="">
+                <h3 class="font-medium text-center">Cashout</h3>
+            </div>
+
+            <div class="border-2 border-gray-300 rounded-lg p-6">
+                <img src="./assets/money1.png" class="mx-auto" alt="">
+                <h3 class="font-medium text-center">Transfer Money</h3>
+            </div>
+
+            <div class="border-2 border-gray-300 rounded-lg p-6">
+                <img src="./assets/bonus1.png" class="mx-auto" alt="">
+                <h3 class="font-medium text-center">Get Bonus</h3>
+            </div>
+
+            <div class="border-2 border-gray-300 rounded-lg p-6">
+                <img src="./assets/purse1.png" class="mx-auto" alt="">
+                <h3 class="font-medium text-center">Pay Bill</h3>
+            </div>
+
+            <div class="border-2 border-gray-300 rounded-lg p-6">
+                <img src="./assets/transaction1.png" class="mx-auto" alt="">
+                <h3 class="font-medium text-center">Transactions</h3>
             </div>
         </div>
-        <button class="btn btn-outline border-2 border-gray-300 text-[#08080880]"><i
-                class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-600"></i>Log Out</button>
     </div>
-     
-    <!-- Hero Section -->
-    <div class="py-11 px-5">
-        <h2 class="font-bold text-3xl">🔥Welcome to Payooo!</h2>
-        <p class="text-lg text-[#08080880] pt-4">Enjoy easy and convenient financial services with us. Cashout charge is
-            low and </p>
+    <!--Add money Form -->
+    <div class="max-w-lg mx-auto">
+        <h2 class="font-semibold text-xl p-4">Add Money</h2>
+        <form action="" class="w-11/12 mx-auto p-10 bg-white rounded-3xl">
+            <div>
+                <label for="" class="font-semibold">Bank Account Number</label><br>
+                <select class="select bg-[#F4F5F7] my-3 rounded-3xl w-full border-none p-3 text-[#08080880] ">
+                    <option disabled selected>Select bank</option>
+                    <option>Sonali Bank</option>
+                    <option>Grammen Bank</option>
+                    <option>Islamic Bank</option>
+                </select>
+            </div>
+            <div>
+                <label for="" class="font-semibold">Bank Account Number</label><br>
+                <input type="text" placeholder="Enter 11 digit account number"
+                    class="input bg-[#F4F5F7] my-3 rounded-3xl border-none p-5 w-full" />
+            </div>
+            <div>
+                <label for="" class="font-semibold">Amount to Add</label><br>
+                <input type="text" placeholder="Add Amount to withdraw"
+                    class="input bg-[#F4F5F7] my-3 rounded-3xl border-none p-5 w-full" />
+            </div>
+            <div>
+                <label for="" class="font-semibold">Pin Number</label><br>
+                <input type="text" placeholder="Enter 4 Digit Pin"
+                    class="input bg-[#F4F5F7] my-3 rounded-3xl border-none p-5 w-full" />
+            </div>
+            <button class="btn bg-[#0874F2] text-white w-full rounded-3xl mt-2 p-5">Add Money</button>
+        </form>
     </div>
-
-    <!-- Card Section -->
-    <div class="min-h-[200px] grid grid-cols-3 grid-rows-2 gap-5 px-5">
-        
-        <div class="border-2 border-gray-300 rounded-lg p-6">
-            <img src="./assets/wallet1.png" class="mx-auto" alt="">
-            <h3 class="font-medium text-center">Add Money</h3>
-        </div>
-
-        <div class="border-2 border-gray-300 rounded-lg p-6">
-            <img src="./assets/send1.png" class="mx-auto" alt="">
-            <h3 class="font-medium text-center">Cashout</h3>
-        </div>
-        
-        <div class="border-2 border-gray-300 rounded-lg p-6">
-            <img src="./assets/money1.png" class="mx-auto" alt="">
-            <h3 class="font-medium text-center">Transfer Money</h3>
-        </div>
-        
-        <div class="border-2 border-gray-300 rounded-lg p-6">
-            <img src="./assets/bonus1.png" class="mx-auto" alt="">
-            <h3 class="font-medium text-center">Get Bonus</h3>
-        </div>
-        
-        <div class="border-2 border-gray-300 rounded-lg p-6">
-            <img src="./assets/purse1.png" class="mx-auto" alt="">
-            <h3 class="font-medium text-center">Pay Bill</h3>
-        </div>
-        
-        <div class="border-2 border-gray-300 rounded-lg p-6">
-            <img src="./assets/transaction1.png" class="mx-auto" alt="">
-            <h3 class="font-medium text-center">Transactions</h3>
-        </div>
-    </div>
-     </div>
-  
 </body>
 
 </html>
