@@ -106,6 +106,23 @@
     <!-- Cash Out Form -->
      <div id="cashOut-parent" style="display: none;">
         <h2 class="font-semibold text-xl p-4">Cash Out</h2>
+          <form action="" class="w-11/12 mx-auto p-10 bg-white rounded-3xl">
+            <div>
+                <label for="" class="font-semibold">Agent Number</label><br>
+                <input id="agent-num" type="text" placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] my-3 rounded-3xl border-none p-5 w-full" />
+            </div>
+            <div>
+                <label for="" class="font-semibold">Amount</label><br>
+                <input id="withdraw-amount" type="text" placeholder="Enter amount to withdraw"
+                    class="input bg-[#F4F5F7] my-3 rounded-3xl border-none p-5 w-full" />
+            </div>
+            <div>
+                <label for="" class="font-semibold">Pin Number</label><br>
+                <input id="your-pin" type="text" placeholder="Enter 4 Digit Pin number"
+                    class="input bg-[#F4F5F7] my-3 rounded-3xl border-none p-5 w-full" />
+            </div>
+            <button id="withdraw-btn" class="btn bg-[#0874F2] text-white w-full rounded-3xl mt-2 p-5">Withdraw Money</button>
+        </form>
      </div>
     </div> 
         <script src="./JS/home.js"></script>
