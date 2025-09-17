@@ -23,6 +23,15 @@ document.getElementById("add-money-btn").addEventListener('click',function(e){
     const currentBalance=parseInt(document.getElementById("current-balance").innerText)
     const newBalance=currentBalance+addAmount;
     document.getElementById("current-balance").innerText=newBalance
-    
+       
+})
 
+//toggling Feature
+document.getElementById("addMoneyCard").addEventListener('click',function(){
+    document.getElementById("cashOut-parent").style.display="none"
+    document.getElementById("addMoney-parent").style.display="block"
+})
+document.getElementById("cashOutCard").addEventListener('click',function(){
+    document.getElementById("addMoney-parent").style.display="none"
+    document.getElementById("cashOut-parent").style.display="block"
 })

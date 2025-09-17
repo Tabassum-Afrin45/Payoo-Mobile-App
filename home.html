@@ -40,40 +40,40 @@
 
         <!-- Card Section -->
         <div class="min-h-[200px] grid grid-cols-3 grid-rows-2 gap-5 px-5">
-
-            <div class="border-2 border-gray-300 rounded-lg p-6">
+            <div id="addMoneyCard" class="border-2 border-gray-300 rounded-lg p-6">
                 <img src="./assets/wallet1.png" class="mx-auto" alt="">
                 <h3 class="font-medium text-center">Add Money</h3>
             </div>
 
-            <div class="border-2 border-gray-300 rounded-lg p-6">
+            <div id="cashOutCard" class="border-2 border-gray-300 rounded-lg p-6">
                 <img src="./assets/send1.png" class="mx-auto" alt="">
                 <h3 class="font-medium text-center">Cashout</h3>
             </div>
 
-            <div class="border-2 border-gray-300 rounded-lg p-6">
+            <div id="transferMoneyCard"class="border-2 border-gray-300 rounded-lg p-6">
                 <img src="./assets/money1.png" class="mx-auto" alt="">
                 <h3 class="font-medium text-center">Transfer Money</h3>
             </div>
 
-            <div class="border-2 border-gray-300 rounded-lg p-6">
+            <div id="getBonusCard" class="border-2 border-gray-300 rounded-lg p-6">
                 <img src="./assets/bonus1.png" class="mx-auto" alt="">
                 <h3 class="font-medium text-center">Get Bonus</h3>
             </div>
 
-            <div class="border-2 border-gray-300 rounded-lg p-6">
+            <div id="payBillCard" class="border-2 border-gray-300 rounded-lg p-6">
                 <img src="./assets/purse1.png" class="mx-auto" alt="">
                 <h3 class="font-medium text-center">Pay Bill</h3>
             </div>
 
-            <div class="border-2 border-gray-300 rounded-lg p-6">
+            <div id="transactionCard"class="border-2 border-gray-300 rounded-lg p-6">
                 <img src="./assets/transaction1.png" class="mx-auto" alt="">
                 <h3 class="font-medium text-center">Transactions</h3>
             </div>
         </div>
     </div>
+   <div class="allFormSection max-w-lg mx-auto">
     <!--Add money Form -->
-    <div class="max-w-lg mx-auto">
+    <div id="addMoney-parent" style="display: none;">
         <h2 class="font-semibold text-xl p-4">Add Money</h2>
         <form action="" class="w-11/12 mx-auto p-10 bg-white rounded-3xl">
             <div>
@@ -103,6 +103,11 @@
             <button id="add-money-btn" class="btn bg-[#0874F2] text-white w-full rounded-3xl mt-2 p-5">Add Money</button>
         </form>
     </div>
+    <!-- Cash Out Form -->
+     <div id="cashOut-parent" style="display: none;">
+        <h2 class="font-semibold text-xl p-4">Cash Out</h2>
+     </div>
+    </div> 
         <script src="./JS/home.js"></script>
 </body>
 
