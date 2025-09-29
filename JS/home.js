@@ -1,4 +1,4 @@
-//Function to get Input Values
+//Functions to get Input Values
 function getInputValue(id){
     const inputValue=document.getElementById(id).value
     return inputValue;
@@ -8,6 +8,18 @@ function getInputValueNumber(id){
     const inputValue=document.getElementById(id).value
     const inputValueNumber=parseInt(inputValue)
     return inputValueNumber;
+}
+
+// Function to get Inner Text
+function getInnerText(id){
+    const element=document.getElementById(id)
+    const elementValue=element.innerText
+    const elementValueNumber=parseInt(elementValue)
+    return elementValueNumber;
+}
+// Function to set Inner Text
+function setInnerText(value){
+    document.getElementById("current-balance").innerText=value;
 }
 
 // Add Money Button Functionality
@@ -30,9 +42,9 @@ document.getElementById("add-money-btn").addEventListener('click',function(e){
         return;
     }
     
-    const currentBalance=parseInt(document.getElementById("current-balance").innerText)
+    const currentBalance=getInnerText("current-balance")
     const newBalance=currentBalance+addAmount;
-    document.getElementById("current-balance").innerText=newBalance
+    setInnerText(newBalance)
        
 })
 
@@ -54,7 +66,8 @@ document.getElementById("withdraw-btn").addEventListener('click',function(e){
         alert("Invalid Agent Number or Pin")
         return;
     }
-    const currentMoney=parseInt(document.getElementById("current-balance").innerText)
+    
+    const currentMoney=getInnerText("current-balance")
     //Amount Validation
     if(currentMoney< withdrawAmount)
     {
@@ -62,7 +75,7 @@ document.getElementById("withdraw-btn").addEventListener('click',function(e){
         return;
     }
     const newAmount=currentMoney-withdrawAmount;
-    document.getElementById("current-balance").innerText=newAmount 
+    setInnerText(newAmount)
     
 })
 
