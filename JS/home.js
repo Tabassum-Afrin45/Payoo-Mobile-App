@@ -103,3 +103,6 @@ document.getElementById("transferMoneyCard").addEventListener('click',function()
 document.getElementById("getBonusCard").addEventListener('click',function(){
   handleToggling("getBonus-parent")
 })
+document.getElementById("payBillCard").addEventListener('click',function(){
+  handleToggling("payBill-parent")
+})
