@@ -22,6 +22,15 @@ function setInnerText(value){
     document.getElementById("current-balance").innerText=value;
 }
 
+// Function to handle toggle
+function handleToggling(id){
+    const forms=document.getElementsByClassName("form")
+    for(const form of forms){
+        form.style.display="none"
+    }
+    document.getElementById(id).style.display="block"  
+}
+
 // Add Money Button Functionality
 document.getElementById("add-money-btn").addEventListener('click',function(e){
     e.preventDefault()
@@ -79,12 +88,18 @@ document.getElementById("withdraw-btn").addEventListener('click',function(e){
     
 })
 
+// Transfer Money Button Functionality
+
 //toggling Feature
 document.getElementById("addMoneyCard").addEventListener('click',function(){
-    document.getElementById("cashOut-parent").style.display="none"
-    document.getElementById("addMoney-parent").style.display="block"
+   handleToggling("addMoney-parent")
 })
 document.getElementById("cashOutCard").addEventListener('click',function(){
-    document.getElementById("addMoney-parent").style.display="none"
-    document.getElementById("cashOut-parent").style.display="block"
+   handleToggling("cashOut-parent")
+})
+document.getElementById("transferMoneyCard").addEventListener('click',function(){
+  handleToggling("transferMoney-parent")
+})
+document.getElementById("getBonusCard").addEventListener('click',function(){
+  handleToggling("getBonus-parent")
 })
