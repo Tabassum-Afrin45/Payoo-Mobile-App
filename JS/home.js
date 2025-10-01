@@ -30,6 +30,18 @@ function handleToggling(id){
     }
     document.getElementById(id).style.display="block"  
 }
+//Function to handle Active Button toggle 
+function handleActiveCardToggle(id){
+    const cardBtns= document.getElementsByClassName("blueFeature")
+    for(const cardBtn of cardBtns)
+    { 
+       cardBtn.classList.remove("border-[#0874f2]","bg-[#0874f20d]")
+       cardBtn.classList.add("border-gray-300")
+    }
+    document.getElementById(id).classList.remove("border-gray-300")
+    document.getElementById(id).classList.add("border-[#0874f2]","bg-[#0874f20d]")
+    
+}
 
 // Add Money Button Functionality
 document.getElementById("add-money-btn").addEventListener('click',function(e){
@@ -93,35 +105,25 @@ document.getElementById("withdraw-btn").addEventListener('click',function(e){
 //toggling Feature
 document.getElementById("addMoneyCard").addEventListener('click',function(){
     handleToggling("addMoney-parent")
-    const cardBtns= document.getElementsByClassName("blueFeature")
-    for(const cardBtn of cardBtns)
-    { 
-       cardBtn.classList.remove("border-[#0874f2]","bg-[#0874f20d]")
-       cardBtn.classList.add("border-gray-300")
-    }
-    document.getElementById("addMoneyCard").classList.remove("border-gray-300")
-    document.getElementById("addMoneyCard").classList.add("border-[#0874f2]","bg-[#0874f20d]")
-    
-    
+    handleActiveCardToggle("addMoneyCard")  
 })
+
 document.getElementById("cashOutCard").addEventListener('click',function(){
    handleToggling("cashOut-parent")
-    const cardBtns= document.getElementsByClassName("blueFeature")
-    for(const cardBtn of cardBtns)
-    { 
-       cardBtn.classList.remove("border-[#0874f2]","bg-[#0874f20d]")
-       cardBtn.classList.add("border-gray-300")
-    }
-    document.getElementById("cashOutCard").classList.remove("border-gray-300")
-    document.getElementById("cashOutCard").classList.add("border-[#0874f2]","bg-[#0874f20d]")
-    
+   handleActiveCardToggle("cashOutCard")
 })
+
 document.getElementById("transferMoneyCard").addEventListener('click',function(){
   handleToggling("transferMoney-parent")
+  handleActiveCardToggle("transferMoneyCard")
 })
+
 document.getElementById("getBonusCard").addEventListener('click',function(){
   handleToggling("getBonus-parent")
+  handleActiveCardToggle("getBonusCard")
 })
+
 document.getElementById("payBillCard").addEventListener('click',function(){
   handleToggling("payBill-parent")
+  handleActiveCardToggle("payBillCard")
 })
