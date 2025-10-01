@@ -92,7 +92,16 @@ document.getElementById("withdraw-btn").addEventListener('click',function(e){
 
 //toggling Feature
 document.getElementById("addMoneyCard").addEventListener('click',function(){
-   handleToggling("addMoney-parent")
+    handleToggling("addMoney-parent")
+    const cardBtns= document.getElementsByClassName("blueFeature")
+    for(const cardBtn of cardBtns)
+    { 
+       cardBtn.classList.remove("border-[#0874f2]","bg-[#0874f20d]")
+    }
+    document.getElementById("addMoneyCard").classList.remove("border-gray-300")
+    document.getElementById("addMoneyCard").classList.add("border-[#0874f2]","bg-[#0874f20d]")
+    
+    
 })
 document.getElementById("cashOutCard").addEventListener('click',function(){
    handleToggling("cashOut-parent")
