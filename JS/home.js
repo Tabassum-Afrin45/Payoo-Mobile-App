@@ -97,6 +97,7 @@ document.getElementById("addMoneyCard").addEventListener('click',function(){
     for(const cardBtn of cardBtns)
     { 
        cardBtn.classList.remove("border-[#0874f2]","bg-[#0874f20d]")
+       cardBtn.classList.add("border-gray-300")
     }
     document.getElementById("addMoneyCard").classList.remove("border-gray-300")
     document.getElementById("addMoneyCard").classList.add("border-[#0874f2]","bg-[#0874f20d]")
@@ -105,6 +106,15 @@ document.getElementById("addMoneyCard").addEventListener('click',function(){
 })
 document.getElementById("cashOutCard").addEventListener('click',function(){
    handleToggling("cashOut-parent")
+    const cardBtns= document.getElementsByClassName("blueFeature")
+    for(const cardBtn of cardBtns)
+    { 
+       cardBtn.classList.remove("border-[#0874f2]","bg-[#0874f20d]")
+       cardBtn.classList.add("border-gray-300")
+    }
+    document.getElementById("cashOutCard").classList.remove("border-gray-300")
+    document.getElementById("cashOutCard").classList.add("border-[#0874f2]","bg-[#0874f20d]")
+    
 })
 document.getElementById("transferMoneyCard").addEventListener('click',function(){
   handleToggling("transferMoney-parent")
