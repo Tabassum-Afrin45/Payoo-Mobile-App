@@ -127,3 +127,7 @@ document.getElementById("payBillCard").addEventListener('click',function(){
   handleToggling("payBill-parent")
   handleActiveCardToggle("payBillCard")
 })
+document.getElementById("transactionCard").addEventListener('click',function(){
+  handleToggling("transaction-parent")
+  handleActiveCardToggle("transactionCard")
+})
